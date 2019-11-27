@@ -94,7 +94,7 @@ class rec_request extends base_request {
         return 'get_rec';
     }
     function get_params():array{
-        return array($this->uid, $this->count, $this->tags, $this->history);
+        return array(array("uid"=>$this->uid, "count"=>$this->count, "tags"=>$this->tags, "history"=>$this->history);
     }
 }
 class batch_param extends base_request {
